@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusExcelTools", "ArgusExcelTools\ArgusExcelTools.csproj", "{5EF4B3D8-8591-4007-975B-D6C82D35AF93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EF4B3D8-8591-4007-975B-D6C82D35AF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF4B3D8-8591-4007-975B-D6C82D35AF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF4B3D8-8591-4007-975B-D6C82D35AF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF4B3D8-8591-4007-975B-D6C82D35AF93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29FFCFC1-E33B-49AD-A9C4-DBD8B84E2B8A}
+	EndGlobalSection
+EndGlobal
