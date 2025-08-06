@@ -185,28 +185,36 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="Argus.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Argus.Designer.cs">
-      <DependentUpon>Argus.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CableScheduleBuilder.cs" />
-    <Compile Include="CableTrayScheduleBuilder.cs" />
-    <Compile Include="CreateScheduleHelper.cs" />
-    <Compile Include="DuctbankScheduleBuilder.cs" />
-    <Compile Include="Equipment.cs" />
-    <Compile Include="MechanicalObject.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
+      <Compile Include="Argus.cs">
+        <SubType>Component</SubType>
+      </Compile>
+      <Compile Include="Argus.Designer.cs">
+        <DependentUpon>Argus.cs</DependentUpon>
+      </Compile>
+      <Compile Include="ArgusRibbon.cs" />
+      <Compile Include="Cable.cs" />
+      <Compile Include="CableScheduleBuilder.cs" />
+      <Compile Include="CableTrayScheduleBuilder.cs" />
+      <Compile Include="CableTraceProcessor.cs" />
+      <Compile Include="CableLibrary.cs" />
+      <Compile Include="CreateScheduleHelper.cs" />
+      <Compile Include="DuctbankScheduleBuilder.cs" />
+      <Compile Include="ConduitLibrary.cs" />
+      <Compile Include="Equipment.cs" />
+      <Compile Include="MechanicalObject.cs" />
+      <Compile Include="Properties\AssemblyInfo.cs">
+        <SubType>Code</SubType>
+      </Compile>
     <Compile Include="Pump.cs" />
-    <Compile Include="Valve.cs" />
-    <Compile Include="MechCsvProcessor.cs" />
-    <Compile Include="Vessel.cs" />
-    <EmbeddedResource Include="Argus.resx">
-      <DependentUpon>Argus.cs</DependentUpon>
-    </EmbeddedResource>
+      <Compile Include="Valve.cs" />
+      <Compile Include="MechCsvProcessor.cs" />
+      <Compile Include="Vessel.cs" />
+      <Compile Include="Raceway.cs" />
+      <Compile Include="TraceResult.cs" />
+      <Compile Include="ScheduleGenerator.cs" />
+      <EmbeddedResource Include="Argus.resx">
+        <DependentUpon>Argus.cs</DependentUpon>
+      </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

@@ -11,7 +11,7 @@ namespace ArgusElectrical
         private RibbonButton cableTraceButton;
         private RibbonButton generateScheduleButton;
 
-        private TraceResult? traceContext;
+        private TraceResult traceContext;
 
         public ArgusRibbon()
             : base(Globals.Factory.GetRibbonFactory())
