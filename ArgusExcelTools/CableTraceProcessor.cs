@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using Excel = Microsoft.Office.Interop.Excel;
 
-namespace ArgusElectrical
+namespace ArgusExcelTools
 {
     internal class CableTraceProcessor
     {
-        private readonly CableLibrary cableLibrary = new();
-        private readonly ConduitLibrary conduitLibrary = new();
+        private readonly CableLibrary cableLibrary = new CableLibrary();
+        private readonly ConduitLibrary conduitLibrary = new ConduitLibrary();
 
         public TraceResult Run(Excel.Workbook workbook)
         {

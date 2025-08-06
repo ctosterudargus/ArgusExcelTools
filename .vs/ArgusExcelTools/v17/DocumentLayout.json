@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\mechcsvprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\mechcsvprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\schedulegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\schedulegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\vessel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\vessel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\racewayschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\racewayschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\mechanicalobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\mechanicalobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\raceway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\raceway.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\ductbankschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\ductbankschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\conduitlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\conduitlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\cabletraceprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\cabletraceprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\cableschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\cableschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\cablelibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\cablelibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|c:\\users\\christian.tosterud\\source\\repos\\argusexceltools\\argusexceltools\\cable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\cable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\valve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\valve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\argus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\argus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\cabletrayschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\cabletrayschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\argus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\argus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\createschedulehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\createschedulehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\cableschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\cableschedulebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\argusexceltools\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EF4B3D8-8591-4007-975B-D6C82D35AF93}|ArgusExcelTools\\ArgusExcelTools.csproj|solutionrelative:argusexceltools\\thisaddin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,23 +50,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Vessel.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Vessel.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\Vessel.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Vessel.cs",
-              "RelativeToolTip": "ArgusExcelTools\\Vessel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwAgAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ScheduleGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\ScheduleGenerator.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\ScheduleGenerator.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\ScheduleGenerator.cs",
+              "RelativeToolTip": "ArgusExcelTools\\ScheduleGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T20:38:12.364Z"
+              "WhenOpened": "2025-08-06T04:02:32.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RacewayScheduleBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\RacewayScheduleBuilder.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\RacewayScheduleBuilder.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\RacewayScheduleBuilder.cs",
+              "RelativeToolTip": "ArgusExcelTools\\RacewayScheduleBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:02:31.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Raceway.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Raceway.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\Raceway.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Raceway.cs",
+              "RelativeToolTip": "ArgusExcelTools\\Raceway.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:02:23.386Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DuctbankScheduleBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\DuctbankScheduleBuilder.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\DuctbankScheduleBuilder.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\DuctbankScheduleBuilder.cs",
+              "RelativeToolTip": "ArgusExcelTools\\DuctbankScheduleBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:02:19.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConduitLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\ConduitLibrary.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\ConduitLibrary.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\ConduitLibrary.cs",
+              "RelativeToolTip": "ArgusExcelTools\\ConduitLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:02:08.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CableTraceProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableTraceProcessor.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\CableTraceProcessor.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableTraceProcessor.cs",
+              "RelativeToolTip": "ArgusExcelTools\\CableTraceProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:02:04.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CableScheduleBuilder.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableScheduleBuilder.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\CableScheduleBuilder.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableScheduleBuilder.cs",
+              "RelativeToolTip": "ArgusExcelTools\\CableScheduleBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:02:01.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CableLibrary.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableLibrary.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\CableLibrary.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableLibrary.cs",
+              "RelativeToolTip": "ArgusExcelTools\\CableLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:01:48.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cable.cs",
+              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Cable.cs",
+              "RelativeDocumentMoniker": "ArgusExcelTools\\Cable.cs",
+              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Cable.cs",
+              "RelativeToolTip": "ArgusExcelTools\\Cable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T04:01:31.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Valve.cs",
               "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Valve.cs",
               "RelativeDocumentMoniker": "ArgusExcelTools\\Valve.cs",
@@ -74,103 +179,8 @@
               "RelativeToolTip": "ArgusExcelTools\\Valve.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T20:30:27.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MechCsvProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\MechCsvProcessor.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\MechCsvProcessor.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\MechCsvProcessor.cs",
-              "RelativeToolTip": "ArgusExcelTools\\MechCsvProcessor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T14:12:18.536Z",
+              "WhenOpened": "2025-07-03T20:30:27.22Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MechanicalObject.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\MechanicalObject.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\MechanicalObject.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\MechanicalObject.cs",
-              "RelativeToolTip": "ArgusExcelTools\\MechanicalObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T20:39:25.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CableTrayScheduleBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableTrayScheduleBuilder.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\CableTrayScheduleBuilder.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableTrayScheduleBuilder.cs",
-              "RelativeToolTip": "ArgusExcelTools\\CableTrayScheduleBuilder.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAswEwAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T01:13:22.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CableScheduleBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableScheduleBuilder.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\CableScheduleBuilder.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CableScheduleBuilder.cs",
-              "RelativeToolTip": "ArgusExcelTools\\CableScheduleBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T16:52:06.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateScheduleHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CreateScheduleHelper.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\CreateScheduleHelper.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\CreateScheduleHelper.cs",
-              "RelativeToolTip": "ArgusExcelTools\\CreateScheduleHelper.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAADwv2UAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T16:48:55.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Argus.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Argus.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\Argus.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Argus.cs [Design]",
-              "RelativeToolTip": "ArgusExcelTools\\Argus.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T16:42:59.477Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Argus.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Argus.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\Argus.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\Argus.cs",
-              "RelativeToolTip": "ArgusExcelTools\\Argus.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAUwD0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T16:46:03.158Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ThisAddIn.cs",
-              "DocumentMoniker": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\ThisAddIn.cs",
-              "RelativeDocumentMoniker": "ArgusExcelTools\\ThisAddIn.cs",
-              "ToolTip": "C:\\Users\\Christian.tosterud\\source\\repos\\ArgusExcelTools\\ArgusExcelTools\\ThisAddIn.cs",
-              "RelativeToolTip": "ArgusExcelTools\\ThisAddIn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T16:42:24.3Z"
             }
           ]
         }

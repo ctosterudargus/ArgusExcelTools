@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using Excel = Microsoft.Office.Interop.Excel;
 
-namespace ArgusElectrical
+namespace ArgusExcelTools
 {
     internal class ScheduleGenerator
     {

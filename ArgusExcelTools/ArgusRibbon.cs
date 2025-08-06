@@ -2,7 +2,7 @@ using Microsoft.Office.Tools.Ribbon;
 using System;
 using System.Windows.Forms;
 
-namespace ArgusElectrical
+namespace ArgusExcelTools
 {
     public class ArgusRibbon : RibbonBase
     {

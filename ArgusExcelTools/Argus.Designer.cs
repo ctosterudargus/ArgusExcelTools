@@ -38,13 +38,13 @@
             this.group1 = this.Factory.CreateRibbonGroup();
             this.argusTab = this.Factory.CreateRibbonTab();
             this.argusElectrical = this.Factory.CreateRibbonGroup();
-            this.argusMechanical = this.Factory.CreateRibbonGroup();
-            this.argusCivil = this.Factory.CreateRibbonGroup();
             this.btnConduitFill = this.Factory.CreateRibbonButton();
             this.btnCableTrace = this.Factory.CreateRibbonButton();
             this.btnCreateSchedule = this.Factory.CreateRibbonButton();
+            this.argusMechanical = this.Factory.CreateRibbonGroup();
             this.btnCreateMechSchedule = this.Factory.CreateRibbonButton();
             this.btnUpdateMechSchedule = this.Factory.CreateRibbonButton();
+            this.argusCivil = this.Factory.CreateRibbonGroup();
             this.tab1.SuspendLayout();
             this.argusTab.SuspendLayout();
             this.argusElectrical.SuspendLayout();
@@ -79,18 +79,6 @@
             this.argusElectrical.Label = "Electrical";
             this.argusElectrical.Name = "argusElectrical";
             // 
-            // argusMechanical
-            // 
-            this.argusMechanical.Items.Add(this.btnCreateMechSchedule);
-            this.argusMechanical.Items.Add(this.btnUpdateMechSchedule);
-            this.argusMechanical.Label = "Mechanical";
-            this.argusMechanical.Name = "argusMechanical";
-            // 
-            // argusCivil
-            // 
-            this.argusCivil.Label = "Civil";
-            this.argusCivil.Name = "argusCivil";
-            // 
             // btnConduitFill
             // 
             this.btnConduitFill.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -118,6 +106,13 @@
             this.btnCreateSchedule.ShowImage = true;
             this.btnCreateSchedule.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnCreateSchedule_Click);
             // 
+            // argusMechanical
+            // 
+            this.argusMechanical.Items.Add(this.btnCreateMechSchedule);
+            this.argusMechanical.Items.Add(this.btnUpdateMechSchedule);
+            this.argusMechanical.Label = "Mechanical";
+            this.argusMechanical.Name = "argusMechanical";
+            // 
             // btnCreateMechSchedule
             // 
             this.btnCreateMechSchedule.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -135,6 +130,11 @@
             this.btnUpdateMechSchedule.Name = "btnUpdateMechSchedule";
             this.btnUpdateMechSchedule.ShowImage = true;
             this.btnUpdateMechSchedule.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnUpdateMechSchedule_Click);
+            // 
+            // argusCivil
+            // 
+            this.argusCivil.Label = "Civil";
+            this.argusCivil.Name = "argusCivil";
             // 
             // Argus
             // 
