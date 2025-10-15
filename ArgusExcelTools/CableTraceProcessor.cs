@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
+using System.Windows.Forms;
 
 namespace ArgusExcelTools
 {
@@ -11,6 +12,7 @@ namespace ArgusExcelTools
     {
         private readonly CableLibrary cableLibrary = new CableLibrary();
         private readonly ConduitLibrary conduitLibrary = new ConduitLibrary();
+        private static string _logFilePath = null;
 
         public TraceResult Run(Excel.Workbook workbook)
         {
@@ -37,6 +39,10 @@ namespace ArgusExcelTools
             BuildRacewayList(racewaySheet, result.Raceways);
             ApplyRacewaySizing(racewaySheet, result);
 
+            if (string.IsNullOrEmpty(workbook.Path))
+            {
+                workbook.Application.Dialogs[Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogSaveAs].Show();
+            }
             var folder = workbook.Path;
             if (!string.IsNullOrEmpty(folder))
             {
@@ -50,7 +56,7 @@ namespace ArgusExcelTools
 
         private void BuildCableList(Excel.Worksheet sheet, List<Cable> cables)
         {
-            int idCol = FindColumnByHeader(sheet, "CABLE ID");
+            int idCol = FindColumnByHeader(sheet, "CABLE ID") + 1;
             int fromCol = FindColumnByHeader(sheet, "FROM");
             int toCol = FindColumnByHeader(sheet, "TO");
             int qtyCol = FindColumnByHeader(sheet, "QTY");
@@ -88,7 +94,7 @@ namespace ArgusExcelTools
 
         private void BuildRacewayList(Excel.Worksheet sheet, List<Raceway> raceways)
         {
-            int idCol = FindColumnByHeader(sheet, "RACEWAY ID");
+            int idCol = FindColumnByHeader(sheet, "RACEWAY ID") + 1;
             int sizeCol = FindColumnByHeader(sheet, "RACEWAY SIZE");
             int fromCol = FindColumnByHeader(sheet, "FROM");
             int toCol = FindColumnByHeader(sheet, "TO");
@@ -323,15 +329,13 @@ namespace ArgusExcelTools
                     }
                 }
 
-                if (!matchFound && !string.IsNullOrEmpty(cable.RacewayRouting) &&
-                    cable.RacewayRouting.IndexOf("ECT", StringComparison.OrdinalIgnoreCase) < 0 &&
-                    cable.RacewayRouting != "-")
+                if (!matchFound && !cable.RacewayRouting.Contains("ECT") && !cable.RacewayRouting.Equals("-"))
                 {
                     log.Add($"Cable {cable.ID} has no corresponding raceway routing.");
                 }
             }
 
-            WriteLog(Path.Combine(folder, "RacewayCableErrorLog.txt"), log);
+            WriteLog("RacewayCableErrorLog.txt", log);
         }
 
         private void ValidateDuctbank(List<Ductbank> ductbanks, List<Raceway> raceways, string folder)
@@ -356,7 +360,7 @@ namespace ArgusExcelTools
                 }
             }
 
-            WriteLog(Path.Combine(folder, "DuctbankErrorLog.txt"), log);
+            WriteLog("DuctbankErrorLog.txt", log);
         }
 
         private void ValidateCableTray(List<CableTray> trays, List<Cable> cables, string folder)
@@ -381,12 +385,29 @@ namespace ArgusExcelTools
                 }
             }
 
-            WriteLog(Path.Combine(folder, "CableTrayErrorLog.txt"), log);
+            WriteLog("CableTrayErrorLog.txt", log);
         }
 
-        private static void WriteLog(string path, List<string> entries)
+        private static void WriteLog(string filename, List<string> entries)
         {
-            using (var writer = new StreamWriter(path, false))
+            if (string.IsNullOrEmpty(_logFilePath))
+            {
+                using (var dialog = new FolderBrowserDialog())
+                {
+                    dialog.Description = "Select folder to save Error Logs";
+
+                    if (dialog.ShowDialog() == DialogResult.OK)
+                    {
+                        _logFilePath = dialog.SelectedPath;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Log save canceled. No log file created.");
+                        return;
+                    }
+                }
+            }
+            using (var writer = new StreamWriter(Path.Combine(_logFilePath, filename), false))
             {
                 if (entries.Any())
                 {
@@ -401,6 +422,7 @@ namespace ArgusExcelTools
                 }
             }
         }
+
 
         private static int FindColumnByHeader(Excel.Worksheet sheet, string header)
         {

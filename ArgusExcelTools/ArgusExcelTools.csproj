@@ -191,16 +191,12 @@
     <Compile Include="Argus.Designer.cs">
       <DependentUpon>Argus.cs</DependentUpon>
     </Compile>
-    <Compile Include="ArgusRibbon.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Cable.cs" />
-    <Compile Include="CableScheduleBuilder.cs" />
-    <Compile Include="CableTrayScheduleBuilder.cs" />
+    <Compile Include="CableTray.cs" />
     <Compile Include="CableTraceProcessor.cs" />
     <Compile Include="CableLibrary.cs" />
-    <Compile Include="CreateScheduleHelper.cs" />
-    <Compile Include="DuctbankScheduleBuilder.cs" />
+    <Compile Include="TemplateHelper.cs" />
+    <Compile Include="Ductbank.cs" />
     <Compile Include="ConduitLibrary.cs" />
     <Compile Include="Equipment.cs" />
     <Compile Include="MechanicalObject.cs" />
@@ -209,11 +205,9 @@
     </Compile>
     <Compile Include="Pump.cs" />
     <Compile Include="Valve.cs" />
-    <Compile Include="MechCsvProcessor.cs" />
     <Compile Include="Vessel.cs" />
     <Compile Include="Raceway.cs" />
     <Compile Include="TraceResult.cs" />
-    <Compile Include="ScheduleGenerator.cs" />
     <EmbeddedResource Include="Argus.resx">
       <DependentUpon>Argus.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +217,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ArgusExcelTools_TemporaryKey.pfx" />
+    <EmbeddedResource Include="Resources\ArgusTemplate.xltm" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -236,7 +231,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="RacewayScheduleBuilder.cs" />
     <Compile Include="ThisAddIn.cs">
       <SubType>Code</SubType>
     </Compile>
