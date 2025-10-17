@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace ArgusExcelTools
 {
@@ -367,7 +368,7 @@ namespace ArgusExcelTools
                 }
             }
 
-            WriteLog("RacewayCableErrorLog.txt", log);
+            WriteLog("RacewayCableErrorLog.txt", log, Globals.ThisAddIn.Application.ActiveWorkbook);
         }
 
         private void ValidateDuctbank(List<Ductbank> ductbanks, List<Raceway> raceways, string folder)
@@ -392,7 +393,7 @@ namespace ArgusExcelTools
                 }
             }
 
-            WriteLog("DuctbankErrorLog.txt", log);
+            WriteLog("DuctbankErrorLog.txt", log, Globals.ThisAddIn.Application.ActiveWorkbook);
         }
 
         private void ValidateCableTray(List<CableTray> trays, List<Cable> cables, string folder)
@@ -417,43 +418,59 @@ namespace ArgusExcelTools
                 }
             }
 
-            WriteLog("CableTrayErrorLog.txt", log);
+            WriteLog("CableTrayErrorLog.txt", log, Globals.ThisAddIn.Application.ActiveWorkbook);
         }
 
-        private static void WriteLog(string filename, List<string> entries)
+        private static void WriteLog(string filename, List<string> entries, Excel.Workbook workbook)
         {
-            if (string.IsNullOrEmpty(_logFilePath))
+            try
             {
-                using (var dialog = new FolderBrowserDialog())
-                {
-                    dialog.Description = "Select folder to save Error Logs";
+                // Determine Excel workbook's folder path
+                string workbookFolder = Path.GetDirectoryName(workbook.FullName);
 
-                    if (dialog.ShowDialog() == DialogResult.OK)
+                // If we don't yet have a folder path, prompt the user
+                if (string.IsNullOrEmpty(_logFilePath))
+                {
+                    using (var dialog = new CommonOpenFileDialog())
                     {
-                        _logFilePath = dialog.SelectedPath;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Log save canceled. No log file created.");
-                        return;
+                        dialog.Title = "Select folder to save Error Logs";
+                        dialog.IsFolderPicker = true;
+                        dialog.EnsurePathExists = true;
+
+                        // Start in the workbook’s directory
+                        dialog.InitialDirectory = workbookFolder ??
+                            Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+                        if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+                        {
+                            _logFilePath = dialog.FileName;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Log save canceled. No log file created.");
+                            return;
+                        }
                     }
                 }
+
+                // Construct full path to log file
+                string logFile = Path.Combine(_logFilePath, filename);
+
+                // Write or append log entries
+                File.AppendAllLines(logFile, entries);
+
+                MessageBox.Show($"Log written to:\n{logFile}",
+                    "Log Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            using (var writer = new StreamWriter(Path.Combine(_logFilePath, filename), false))
+            catch (Exception ex)
             {
-                if (entries.Any())
-                {
-                    foreach (var entry in entries)
-                    {
-                        writer.WriteLine(entry);
-                    }
-                }
-                else
-                {
-                    writer.WriteLine("No errors found.");
-                }
+                MessageBox.Show($"An error occurred while writing the log:\n\n{ex.Message}",
+                    "Error Writing Log", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        
+                
 
 
         private static int FindColumnByHeader(Excel.Worksheet sheet, string header)

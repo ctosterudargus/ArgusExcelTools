@@ -37,3 +37,7 @@ C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExce
 C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExc.389E0FBB.Up2Date
 C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.dll
 C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.pdb
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml

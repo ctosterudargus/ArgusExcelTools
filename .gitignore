@@ -5,3 +5,13 @@
 /Outputs
 /20231029.00 - Electrical Schedules - Tank Farm.xlsx
 /COPY FOR DEBUGGING.xlsx
+.vs
+**/bin/
+**/obj/
+packages/
+*.user
+*.suo
+*.cache
+*.log
+*.vsto
+*.dll.manifest
