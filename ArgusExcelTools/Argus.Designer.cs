@@ -82,10 +82,12 @@
             // btnConduitFill
             // 
             this.btnConduitFill.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.btnConduitFill.Enabled = false;
             this.btnConduitFill.Image = global::ArgusExcelTools.Properties.Resources.Conduit_Fill;
             this.btnConduitFill.Label = "Conduit Fill";
             this.btnConduitFill.Name = "btnConduitFill";
             this.btnConduitFill.ShowImage = true;
+            this.btnConduitFill.Visible = false;
             this.btnConduitFill.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnConduitFill_Click);
             // 
             // btnCableTrace
@@ -100,10 +102,12 @@
             // btnCreateSchedule
             // 
             this.btnCreateSchedule.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.btnCreateSchedule.Enabled = false;
             this.btnCreateSchedule.Image = global::ArgusExcelTools.Properties.Resources.Create_Schedule;
             this.btnCreateSchedule.Label = "Create Schedule";
             this.btnCreateSchedule.Name = "btnCreateSchedule";
             this.btnCreateSchedule.ShowImage = true;
+            this.btnCreateSchedule.Visible = false;
             this.btnCreateSchedule.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnCreateSchedule_Click);
             // 
             // argusMechanical
