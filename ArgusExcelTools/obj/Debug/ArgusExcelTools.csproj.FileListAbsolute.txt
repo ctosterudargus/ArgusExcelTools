@@ -24,3 +24,16 @@ C:\Users\evan.day\OneDrive - Argus Companies\Desktop\Coding\ArgusExcelTools\Argu
 C:\Users\evan.day\OneDrive - Argus Companies\Desktop\Coding\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExc.389E0FBB.Up2Date
 C:\Users\evan.day\OneDrive - Argus Companies\Desktop\Coding\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.dll
 C:\Users\evan.day\OneDrive - Argus Companies\Desktop\Coding\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.pdb
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\ArgusExcelTools.dll
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\ArgusExcelTools.pdb
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\ArgusExcelTools.dll.manifest
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\ArgusExcelTools.vsto
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.csproj.AssemblyReference.cache
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.Argus.resources
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.Properties.Resources.resources
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.csproj.GenerateResource.cache
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.csproj.CoreCompileInputs.cache
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExc.389E0FBB.Up2Date
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.dll
+C:\Users\ctosterud\Documents\ArgusExcelTools\ArgusExcelTools\obj\Debug\ArgusExcelTools.pdb

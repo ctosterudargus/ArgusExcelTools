@@ -56,15 +56,32 @@ namespace ArgusExcelTools
 
         private void BuildCableList(Excel.Worksheet sheet, List<Cable> cables)
         {
-            int idCol = FindColumnByHeader(sheet, "CABLE ID") + 1;
-            int fromCol = FindColumnByHeader(sheet, "FROM");
-            int toCol = FindColumnByHeader(sheet, "TO");
-            int qtyCol = FindColumnByHeader(sheet, "QTY");
-            int sizeCol = FindColumnByHeader(sheet, "SIZE");
-            int typeCol = FindColumnByHeader(sheet, "TYPE");
-            int groundCol = FindColumnByHeader(sheet, "GND");
-            int routingCol = FindColumnByHeader(sheet, "RACEWAY ROUTING");
-            int signalCol = FindColumnByHeader(sheet, "SIGNAL TYPE");
+            // Check that all expected headers exist
+            string[] requiredHeaders = { "CABLE ID", "FROM", "TO", "QTY", "SIZE", "TYPE", "GND", "RACEWAY ROUTING", "SIGNAL TYPE" };
+            var headerMap = new Dictionary<string, int>();
+
+            foreach (string header in requiredHeaders)
+            {
+                int colIndex = FindColumnByHeader(sheet, header);
+                headerMap[header] = colIndex;
+
+                if (colIndex == -1)
+                {
+                    throw new InvalidOperationException(
+                        $"'{header}' column was not identified. Expected column '{header}' to be present in the worksheet."
+                    );
+                }
+            }
+
+            int idCol = headerMap["CABLE ID"] + 1;
+            int fromCol = headerMap["FROM"];
+            int toCol = headerMap["TO"];
+            int qtyCol = headerMap["QTY"];
+            int sizeCol = headerMap["SIZE"];
+            int typeCol = headerMap["TYPE"];
+            int groundCol = headerMap["GND"];
+            int routingCol = headerMap["RACEWAY ROUTING"];
+            int signalCol = headerMap["SIGNAL TYPE"];
 
             var regex = new Regex(@"^C-\d{1,4}$", RegexOptions.IgnoreCase);
             int lastRow = sheet.UsedRange.Rows.Count;
@@ -73,9 +90,7 @@ namespace ArgusExcelTools
             {
                 var id = ((Excel.Range)sheet.Cells[row, idCol]).Text as string;
                 if (!regex.IsMatch(id ?? string.Empty))
-                {
                     continue;
-                }
 
                 cables.Add(new Cable
                 {
@@ -92,15 +107,33 @@ namespace ArgusExcelTools
             }
         }
 
+
         private void BuildRacewayList(Excel.Worksheet sheet, List<Raceway> raceways)
         {
-            int idCol = FindColumnByHeader(sheet, "RACEWAY ID") + 1;
-            int sizeCol = FindColumnByHeader(sheet, "RACEWAY SIZE");
-            int fromCol = FindColumnByHeader(sheet, "FROM");
-            int toCol = FindColumnByHeader(sheet, "TO");
-            int circuitCol = FindColumnByHeader(sheet, "CIRCUIT TYPE");
-            int fillCol = FindColumnByHeader(sheet, "CABLE FILL");
-            int ductbankCol = FindColumnByHeader(sheet, "DUCTBANK ROUTING");
+            // Check that all expected headers exist
+            string[] requiredHeaders = { "RACEWAY ID", "RACEWAY SIZE", "FROM", "TO", "CIRCUIT TYPE", "CABLE FILL", "DUCTBANK ROUTING" };
+            var headerMap = new Dictionary<string, int>();
+
+            foreach (string header in requiredHeaders)
+            {
+                int colIndex = FindColumnByHeader(sheet, header);
+                headerMap[header] = colIndex;
+
+                if (colIndex == -1)
+                {
+                    throw new InvalidOperationException(
+                        $"'{header}' column was not identified. Expected column '{header}' to be present in the worksheet."
+                    );
+                }
+            }
+
+            int idCol = headerMap["RACEWAY ID"] + 1; 
+            int sizeCol = headerMap["RACEWAY SIZE"];
+            int fromCol = headerMap["FROM"];
+            int toCol = headerMap["TO"];
+            int circuitCol = headerMap["CIRCUIT TYPE"];
+            int fillCol = headerMap["CABLE FILL"];
+            int ductbankCol = headerMap["DUCTBANK ROUTING"];
 
             var regex = new Regex(@"^R-\d{1,4}$", RegexOptions.IgnoreCase);
             int lastRow = sheet.UsedRange.Rows.Count;
@@ -109,9 +142,7 @@ namespace ArgusExcelTools
             {
                 var id = ((Excel.Range)sheet.Cells[row, idCol]).Text as string;
                 if (!regex.IsMatch(id ?? string.Empty))
-                {
                     continue;
-                }
 
                 raceways.Add(new Raceway
                 {
@@ -125,6 +156,7 @@ namespace ArgusExcelTools
                 });
             }
         }
+
 
         private List<Ductbank> BuildDuctbankList(Excel.Worksheet sheet)
         {
