@@ -6,6 +6,7 @@ using System.IO;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Windows.Forms;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using static ArgusExcelTools.RouteCheckResult;
 
 namespace ArgusExcelTools
 {
@@ -45,11 +46,69 @@ namespace ArgusExcelTools
                 workbook.Application.Dialogs[Microsoft.Office.Interop.Excel.XlBuiltInDialog.xlDialogSaveAs].Show();
             }
             var folder = workbook.Path;
+
             if (!string.IsNullOrEmpty(folder))
             {
                 ValidateCableTray(trays, result.Cables, folder);
                 ValidateDuctbank(ductbanks, result.Raceways, folder);
                 ValidateCableRaceway(result.Cables, result.Raceways, folder);
+            }
+
+            // === Cable Path Validation ===
+            try
+            {
+                // Build the raceway graph
+                var graph = GraphBuilder.Build(result.Raceways);
+
+                // Build a quick lookup dictionary for declared-route checks
+                var racewayById = new Dictionary<string, Raceway>(StringComparer.OrdinalIgnoreCase);
+                foreach (var r in result.Raceways)
+                    racewayById[r.ID] = r;
+
+                var pathLog = new List<string>();
+
+                foreach (var c in result.Cables)
+                {
+                    // Skip cables with null or "-" routing
+                    if (string.IsNullOrWhiteSpace(c.RacewayRouting) || c.RacewayRouting.Trim() == "-")
+                    {
+                        pathLog.Add($"[NoRouting] Cable {c.ID} {c.Description}: No routing listed in the schedule.");
+                        continue;
+                    }
+
+                    // Step 1: Check declared route contiguity
+                    var declared = PathValidator.CheckDeclaredRoute(graph, c, racewayById);
+                    if (declared.Status == RouteStatus.BrokenRoute)
+                    {
+                        pathLog.Add($"[BrokenRoute] Cable {c.ID} {c.Description}: {declared.Message} " +
+                                    $"({declared.OffendingRacewayA} -> {declared.OffendingRacewayB})");
+                        continue;
+                    }
+
+                    // Step 2: Graph reachability check (BFS)
+                    if (PathValidator.TryFindPath(graph, c.From, c.To, c, null, out var pathNodes, out var reason))
+                    {
+                        // Build a detailed route string for logging
+                        string route = pathNodes != null && pathNodes.Count > 0
+                            ? string.Join(" -> ", pathNodes)
+                            : "(no path nodes found)";
+
+                        pathLog.Add($"[Valid] Cable {c.ID} {c.Description}: Path OK ({pathNodes.Count} nodes)    Route: {route}");
+                    }
+                    else
+                    {
+                        var msg = reason != null ? $"Violates constraints: {reason}" : "No valid path found in raceway network.";
+                        pathLog.Add($"[NotReachable] Cable {c.ID} {c.Description}: {msg}");
+                    }
+                }
+
+                // Write results to a new log file in the workbook folder
+                WriteLog("CablePathValidationLog.txt", pathLog, workbook);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error during cable path validation:\n{ex.Message}",
+                    "Cable Path Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return result;
@@ -58,7 +117,7 @@ namespace ArgusExcelTools
         private void BuildCableList(Excel.Worksheet sheet, List<Cable> cables)
         {
             // Check that all expected headers exist
-            string[] requiredHeaders = { "CABLE ID", "FROM", "TO", "QTY", "SIZE", "TYPE", "GND", "RACEWAY ROUTING", "SIGNAL TYPE" };
+            string[] requiredHeaders = { "CABLE ID", "FROM", "TO", "QTY", "SIZE", "TYPE", "GND", "RACEWAY ROUTING", "SIGNAL TYPE", "DESCRIPTION" };
             var headerMap = new Dictionary<string, int>();
 
             foreach (string header in requiredHeaders)
@@ -83,6 +142,7 @@ namespace ArgusExcelTools
             int groundCol = headerMap["GND"];
             int routingCol = headerMap["RACEWAY ROUTING"];
             int signalCol = headerMap["SIGNAL TYPE"];
+            int descriptionCol = headerMap["DESCRIPTION"];
 
             var regex = new Regex(@"^C-\d{1,4}$", RegexOptions.IgnoreCase);
             int lastRow = sheet.UsedRange.Rows.Count;
@@ -103,7 +163,8 @@ namespace ArgusExcelTools
                     Type = ((Excel.Range)sheet.Cells[row, typeCol]).Text as string,
                     Ground = ((Excel.Range)sheet.Cells[row, groundCol]).Text as string,
                     RacewayRouting = ((Excel.Range)sheet.Cells[row, routingCol]).Text as string,
-                    SignalType = ((Excel.Range)sheet.Cells[row, signalCol]).Text as string
+                    SignalType = ((Excel.Range)sheet.Cells[row, signalCol]).Text as string,
+                    Description = ((Excel.Range)sheet.Cells[row, descriptionCol]).Text as string
                 });
             }
         }
@@ -457,7 +518,7 @@ namespace ArgusExcelTools
                 string logFile = Path.Combine(_logFilePath, filename);
 
                 // Write or append log entries
-                File.AppendAllLines(logFile, entries);
+                File.WriteAllLines(logFile, entries);
 
                 MessageBox.Show($"Log written to:\n{logFile}",
                     "Log Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -60,7 +60,7 @@ namespace ArgusExcelTools
 
         private void btnCreateMechSchedule_Click(object sender, RibbonControlEventArgs e)
         {
-
+            new ArgusExcelTools.MechScheduleBuilder().BuildFromActiveSheet();
         }
 
         private void btnUpdateMechSchedule_Click(object sender, RibbonControlEventArgs e)
